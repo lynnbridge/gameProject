@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <meta charset="utf-8">
+    <title>Wecome to the Game</title>
+  </head>
+  <body>
+    <form class="entername" action="" action="form.asp" method="post">
+      UserName: <input  type="text" name="username" required>
+      <input type="submit" name="Enter" value="Submit">
+    </form>
+    <br><br>
+    <form class="Quiz" action="index.html" method="post" onsubmit="return checkAnswers()">
+      Can you match the description with its book?
+      <fieldset>
+        Four children get lost in a magical forest.
+        <select id="quest1" required>
+          <option value="">Pick one of the Following</option>
+          <option value="Harry Potter">Harry Potter</option>
+          <option value="Chronicles of Narnia">Chronicles of Narnia</option>
+          <option value="Fantastic Beast and where to Find them">Fantastic Beast and where to Find them</option>
+          <option value="The Way of Kings">The Way of Kings</option>
+          <option value="Dragon Riders of Pern">Dragon Riders of Pern</option>
+        </select>
+        <br><br>
+        A boy fights evil while going to school.
+        <select id="quest2" required>
+          <option value="">Pick one of the Following</option>
+          <option value="Harry Potter">Harry Potter</option>
+          <option value="Chronicles of Narnia">Chronicles of Narnia</option>
+          <option value="Fantastic Beast and where to Find them">Fantastic Beast and where to Find them</option>
+          <option value="The Way of Kings">The Way of Kings</option>
+          <option value="Dragon Riders of Pern">Dragon Riders of Pern</option>
+        </select>
+        <br><br>
+        An encyclopedic account of creatures in the world
+        <select id="quest3" required>
+          <option value="">Pick one of the Following</option>
+          <option value="Harry Potter">Harry Potter</option>
+          <option value="Chronicles of Narnia">Chronicles of Narnia</option>
+          <option value="Fantastic Beast and where to Find them">Fantastic Beast and where to Find them</option>
+          <option value="The Way of Kings">The Way of Kings</option>
+          <option value="Dragon Riders of Pern">Dragon Riders of Pern</option>
+        </select>
+        <br><br>
+        A ring, a fellowship, and a four souls who didn't want adventure.
+        <select id="quest4" required>
+          <option value="">Pick one of the Following</option>
+          <option value="Shannara">Shannara</option>
+          <option value="Chronicles of Narnia">Chronicles of Narnia</option>
+          <option value="Lord of the Rings">Lord of the Rings</option>
+          <option value="The Way of Kings">The Way of Kings</option>
+          <option value="Dragon Riders of Pern">Dragon Riders of Pern</option>
+        </select>
+        <br><br>
+        <button onlclick="calculateScore()" type="button" name="submit">Submit</button>
+        <p id="total"></p>
+      </fieldset>
+    </form>
+    <script src="./Routes/index.js"></script>
+
+
+
+  </body>
+</html>
